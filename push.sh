@@ -5,5 +5,6 @@ read commit_message
 
 git add -A
 git commit -m "$commit_message"
-git push origin solomon-infra
+git push origin main
+
 
