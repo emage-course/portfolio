@@ -34,26 +34,26 @@ jobs:
       (github.event_name == 'pull_request') || (github.event_name == 'push') ||
       (github.event_name == 'workflow_dispatch' && github.event.inputs.solomon-portfolio-webpage-setup == 'yes')
     uses: ./.github/workflows/terraform_base_action.yml
-      # ./.github/workflows/terraform-base.yml #Techsecom/terraform-gha-aws-oidc-config/.github/workflows/terraform-base.yml@main
+      # ./.github/workflows/terraform-base.yml #kendopx/terraform-gha-aws-oidc-config/.github/workflows/terraform-base.yml@main
     secrets: inherit
     with:
       stage: solomon-portfolio-webpage-setup
       iam_role: "arn:aws:iam::505648753038:role/terraform-gha-oidc-role"
       tf_mode: "plan"
       environment_directory: solomon_portfolio_webpage/
-      project_name: techsecom-net
-      org_domain_name: techsecom
+      project_name: kendopx-com
+      org_domain_name: kendopx
       generate_ir: true
       deployment_time: 8
       deployment_status: "success"
       product_name: "solomon Portfolio Webpage Setup on Aws"
       deployment_cluster_name: "solomon-portfolio-webpage-setup-plan"
-      aws_account_name: "techsecom-aws-oidc-account"
+      aws_account_name: "kendopx-aws-oidc-account"
       code_commit_sha: ${{github.sha}}
       code_git_ref: ${{github.ref}}
       release_version: "v1.0.0"
       aws_region: "us-east-2"
-      ir_s3_bucket: techsecom-rke2-manager-state
+      ir_s3_bucket: kendopx-rke2-manager-state
 
   solomon-portfolio-webpage-setup-apply:
     name: Terraform Apply solomon Portfolio Webpage Setup on Awsr
@@ -66,18 +66,18 @@ jobs:
       iam_role: "arn:aws:iam::505648753038:role/terraform-gha-oidc-role"
       tf_mode: "apply"
       environment_directory: solomon_portfolio_webpage/
-      project_name: techsecom-net
-      org_domain_name: techsecom
+      project_name: kendopx-com
+      org_domain_name: kendopx
       generate_ir: true
       deployment_time: 8
       deployment_status: "success"
       product_name: "solomon Portfolio Webpage Setup on Aws"
       deployment_cluster_name: "solomon-portfolio-webpage-setup-apply"
-      aws_account_name: "techsecom-aws-oidc-account"
+      aws_account_name: "kendopx-aws-oidc-account"
       code_commit_sha: ${{github.sha}}
       code_git_ref: ${{github.ref}}
       release_version: "v1.0.0"
       aws_region: "us-east-2"
-      ir_s3_bucket: techsecom-rke2-manager-state
+      ir_s3_bucket: kendopx-rke2-manager-state
       
   

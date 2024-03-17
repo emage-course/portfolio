@@ -1,8 +1,8 @@
-### gha-auth-aws-tf-jos
+### techsecom_engineers_portfolio
 
 This is a Github Action workflow that authenticates with AWS resources without requiring any access token and this job runs all terraform justs.
 
-In summary, if you want to contribute to a project, the simplest way is to:
+In summary, if you want to contribute to this project, the simplest way is to:
 
 1. Find a project you want to contribute to
 2. Fork it
@@ -15,11 +15,11 @@ In summary, if you want to contribute to a project, the simplest way is to:
 
 ```sh
 ### Clone the project 
-git clone https://github.com/Techsecom/gha-auth-aws-tf-jos.git
+git clone https://github.com/kendopx/developers-portfolio.git
 
 ### Change to the project 
-cd gha-auth-aws-tf-jos
-git branch 
+cd developers-portfoli
+git branch -r 
 
 ### Create branch  from main 
 git checkout -b <yourname>-infra main 
@@ -27,14 +27,14 @@ git checkout -b <yourname>-infra main
 ### Make all the neccessary change 
 
 NOTE
-The first job belongs to Donald so do not change `workflow_dispatch:`
+The first job belongs to Solomon so do not change `workflow_dispatch:`
 The second Job in `yours` so modify as needed
 
-1. Rename `gha-auth-aws-tf-jos/donald-porfolio-setup` directory # to <yourname>/yourname>portfolio_webpage
-2. `variables.tf` change   subdomain_name   = "donald" # to subdomain_name  = "solomon"<yourname>
-3. `main.tf` change host_name  = "www.solomon.techsecom.co" # to  host_name  = "www.<yourname>.techsecom.co" 
+1. Rename `gha-auth-aws-tf-jos/solomon-porfolio-setup` directory # to <yourname>/yourname>portfolio_webpage
+2. `variables.tf` change   subdomain_name   = "solomon" # to subdomain_name  = "solomon"<yourname>
+3. `main.tf` change host_name  = "www.solomon.kendopx.com" # to  host_name  = "www.<yourname>.kendopx.com" 
 4.`versions.tf` change techsecom-engineers-portfolios.tfstate # change to techsecom-engineers-<yourname>.tfstate
-5. `.github/workflows/terraform-resource-deployment.yml` # Run a recursive find and replace, replacing "donald" with "<yourname>"
+5. `.github/workflows/terraform-resource-deployment.yml` # Run a recursive find and replace, replacing "solomon" with "<yourname>"
 6. `.github/workflows/terraform-resource-deployment.yml` # For environment_directory # Add your directory <yourname>_portfolio_webpage_setup 
 
 ### Stage changes for commit
@@ -75,7 +75,7 @@ git checkout main
 
 ### Test your portforlio webpage 
 Put the URL below into the web browser. The result will determine whether your workflow works or not.
-https://<yourname>infra.techsecom.co
+https://<yourname>infra.kendopx.com
 
 
 ### Other useful GitHub commands
@@ -91,4 +91,15 @@ git branch -D <yourname>-infra
 git branch -a   
 git branch -d <yourname>-infra
 git push origin --delete <yourname>-infra
+
+### To commit and push the change via script..
+
+#!/bin/bash
+
+echo "Enter your commit message:"
+read commit_message
+
+git add -A
+git commit -m "$commit_message"
+git push origin <yourname>>-infra
 ```
