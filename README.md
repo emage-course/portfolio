@@ -13,6 +13,11 @@ In summary, if you want to contribute to this project, the simplest way is to:
 7. Click the Compare & pull request button
 8. Click Create pull request to open a new pull request
 
+### Requirements
+1. Create AWS role: terraform-gha-oidc-role
+2. Create AWS S3 bucket: aws s3 mb s3://kendopx-rke2-manager-state   
+3. Hashicorp Vault 
+
 ```sh
 ### Clone the project 
 git clone https://github.com/kendopx/developers-portfolio.git
