@@ -40,9 +40,6 @@ jobs:
     secrets: inherit
     with:
       stage: janel-portfolio-webpage-setup
-      aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-      aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-      aws-region: us-east-2      
       # iam_role: "arn:aws:iam::505648753038:role/terraform-gha-oidc-role"
       tf_mode: "plan"
       environment_directory: janel_portfolio_webpage/
@@ -68,9 +65,6 @@ jobs:
     secrets: inherit
     with:
       stage: janel-portfolio-webpage-setup
-      aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-      aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-      aws-region: us-east-2      
       # iam_role: "arn:aws:iam::505648753038:role/terraform-gha-oidc-role"
       tf_mode: "apply"
       environment_directory: janel_portfolio_webpage/
