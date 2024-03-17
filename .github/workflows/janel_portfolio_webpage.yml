@@ -1,4 +1,4 @@
-name: Solomon Etsecom Portfolio Webpage
+name: Janel Portfolio Webpage
 on:
   push:
     branches:
@@ -7,8 +7,8 @@ on:
 
   workflow_dispatch:
     inputs:
-      solomon-portfolio-webpage-setup:
-        description: "Do You Want To Terraform Plan and Apply solomon Portfolio Webpage Setup on Aws (yes/no)"
+      janel-portfolio-webpage-setup:
+        description: "Do You Want To Terraform Plan and Apply janel Portfolio Webpage Setup on Aws (yes/no)"
         required: true
         default: "no"
         type: choice
@@ -30,29 +30,29 @@ permissions:
   
 
 jobs:
-  solomon-portfolio-webpage-setup-plan:
-    name: Terraform Plan solomon Portfolio Webpage Setup on Aws
+  janel-portfolio-webpage-setup-plan:
+    name: Terraform Plan janel Portfolio Webpage Setup on Aws
     if: >-
       (github.event_name == 'pull_request') || (github.event_name == 'push') ||
-      (github.event_name == 'workflow_dispatch' && github.event.inputs.solomon-portfolio-webpage-setup == 'yes')
+      (github.event_name == 'workflow_dispatch' && github.event.inputs.janel-portfolio-webpage-setup == 'yes')
     uses: ./.github/workflows/terraform_base_action.yml
       # ./.github/workflows/terraform-base.yml #kendopx/terraform-gha-aws-oidc-config/.github/workflows/terraform-base.yml@main
     secrets: inherit
     with:
-      stage: solomon-portfolio-webpage-setup
+      stage: janel-portfolio-webpage-setup
       aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
       aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
       aws-region: us-east-2      
       # iam_role: "arn:aws:iam::505648753038:role/terraform-gha-oidc-role"
       tf_mode: "plan"
-      environment_directory: solomon_portfolio_webpage/
+      environment_directory: janel_portfolio_webpage/
       project_name: kendopx-com
       org_domain_name: kendopx
       generate_ir: true
       deployment_time: 8
       deployment_status: "success"
-      product_name: "solomon Portfolio Webpage Setup on Aws"
-      deployment_cluster_name: "solomon-portfolio-webpage-setup-plan"
+      product_name: "janel Portfolio Webpage Setup on Aws"
+      deployment_cluster_name: "janel-portfolio-webpage-setup-plan"
       aws_account_name: "kendopx-aws-oidc-account"
       code_commit_sha: ${{github.sha}}
       code_git_ref: ${{github.ref}}
@@ -60,27 +60,27 @@ jobs:
       aws_region: "us-east-2"
       ir_s3_bucket: kendopx-rke2-manager-state
 
-  solomon-portfolio-webpage-setup-apply:
-    name: Terraform Apply solomon Portfolio Webpage Setup on Awsr
-    if: github.event_name == 'workflow_dispatch' && github.event.inputs.solomon-portfolio-webpage-setup== 'yes'
+  janel-portfolio-webpage-setup-apply:
+    name: Terraform Apply janel Portfolio Webpage Setup on Awsr
+    if: github.event_name == 'workflow_dispatch' && github.event.inputs.janel-portfolio-webpage-setup== 'yes'
     uses: ./.github/workflows/terraform_base_action.yml
-    needs: solomon-portfolio-webpage-setup-plan
+    needs: janel-portfolio-webpage-setup-plan
     secrets: inherit
     with:
-      stage: solomon-portfolio-webpage-setup
+      stage: janel-portfolio-webpage-setup
       aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
       aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
       aws-region: us-east-2      
       # iam_role: "arn:aws:iam::505648753038:role/terraform-gha-oidc-role"
       tf_mode: "apply"
-      environment_directory: solomon_portfolio_webpage/
+      environment_directory: janel_portfolio_webpage/
       project_name: kendopx-com
       org_domain_name: kendopx
       generate_ir: true
       deployment_time: 8
       deployment_status: "success"
-      product_name: "solomon Portfolio Webpage Setup on Aws"
-      deployment_cluster_name: "solomon-portfolio-webpage-setup-apply"
+      product_name: "janel Portfolio Webpage Setup on Aws"
+      deployment_cluster_name: "janel-portfolio-webpage-setup-apply"
       aws_account_name: "kendopx-aws-oidc-account"
       code_commit_sha: ${{github.sha}}
       code_git_ref: ${{github.ref}}

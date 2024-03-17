@@ -36,7 +36,7 @@ module "webpage_portfolio_v1" {
         key_prefix_equals               = "archive/"
       },
       redirect = {
-        host_name          = "www.donald.techsecom.co"
+        host_name          = "www.solomon.kendopx.com"
         http_redirect_code = 301
         protocol           = "https"
         replace_key_with   = "error-404.html"
@@ -47,7 +47,7 @@ module "webpage_portfolio_v1" {
     {
       allowed_headers = ["*"]
       allowed_methods = ["GET"]
-      allowed_origins = ["https://donald.techsecom.co"]
+      allowed_origins = ["https://solomon.kendopx.com"]
       max_age_seconds = 3000
     }
   ]
@@ -98,15 +98,15 @@ resource "cloudflare_zone_settings_override" "my_zone_settings" {
   depends_on = [cloudflare_page_rule.http_to_https]
 }
 
-resource "cloudflare_worker_script" "remove_html_extension" {
-  name       = "remove-html-extension"
-  content    = file("${path.module}/remove_html_extension.js")
-  account_id = "af49a211cd96ecd23f252eed8bd2fcfa"
+resource "cloudflare_worker_script" "solomon_html_extension" {
+  name       = "solomon-html-extension"
+  content    = file("${path.module}/solomon_html_extension.js")
+  account_id = "9839072740566e6053a85a40082affff"
 }
 
-resource "cloudflare_worker_route" "remove_html_extension_route" {
+resource "cloudflare_worker_route" "solomon_html_extension_route" {
   zone_id     = data.cloudflare_zones.domain.zones[0].id
   pattern     = format("%s.%s/*", var.subdomain_name, data.cloudflare_zones.domain.zones[0].name)
-  script_name = cloudflare_worker_script.remove_html_extension.name
+  script_name = cloudflare_worker_script.solomon_html_extension.name
   depends_on  = [cloudflare_record.my_domain]
 }

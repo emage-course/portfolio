@@ -7,7 +7,7 @@ variable "domain_name" {
 variable "subdomain_name" {
   type        = string
   description = "The subdomain to create in the Cloudflare zone"
-  default     = "donald"
+  default     = "solomon"
 }
 
 
