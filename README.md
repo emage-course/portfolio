@@ -108,3 +108,23 @@ git add -A
 git commit -m "$commit_message"
 git push origin <yourname>>-infra
 ```
+
+### ### Configuring OIDC for GitHub Actions on AWS
+
+The New Way: GitHub OIDC Identifty Federation
+
+Since GitHub added OpenID Connect (OIDC) support for GitHub Actions (as documented here on the GitHub Roadmap), we can securely deploy to any cloud provider that supports OIDC (including AWS) using short-lived keys that are automatically rotated for each deployment.
+
+The primary benefits are:
+
+- No need to store long-term credentials and plan for their rotation
+- Use your cloud provider’s native IAM tools to configure least-privilege access for your build jobs
+- Even easier to automate with Infrastructure as Code (IaC)
+
+### How to Implement Identity Federation Using GitHub OIDC Actions on AWS
+https://scalesec.com/blog/oidc-for-github-actions-on-aws/
+aws sts get-caller-identity
+
+https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_providers_create_oidc.html#manage-oidc-provider-cli
+
+### Action AWS OIDC Auth
