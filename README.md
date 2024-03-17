@@ -128,3 +128,12 @@ aws sts get-caller-identity
 https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_providers_create_oidc.html#manage-oidc-provider-cli
 
 ### Action AWS OIDC Auth
+
+
+### Need some more understanding on how the following were configured 
+
+TF_VAR_hcp_client_id: ${{secrets.HCP_CLIENT_ID}}
+TF_VAR_hcp_client_secret: ${{secrets.HCP_CLIENT_SECRET}}
+iam_role: "arn:aws:iam::11111111111:role/terraform-gha-oidc-role"
+- Configure OIDC for GitHub Actions on AWS
+- Assuming role with OIDC
