@@ -1,4 +1,4 @@
-name: Solomon Etsecom Portfolio Webpage
+name: Solomon Williams Portfolio Webpage
 on:
   push:
     branches:
@@ -40,7 +40,7 @@ jobs:
     secrets: inherit
     with:
       stage: solomon-portfolio-webpage-setup
-      # iam_role: "arn:aws:iam::505648753038:role/terraform-gha-oidc-role"
+      iam_role: "arn:aws:iam::505648753038:role/terraform-gha-oidc-role"
       tf_mode: "plan"
       environment_directory: solomon_portfolio_webpage/
       project_name: kendopx-com
@@ -65,7 +65,7 @@ jobs:
     secrets: inherit
     with:
       stage: solomon-portfolio-webpage-setup
-      # iam_role: "arn:aws:iam::505648753038:role/terraform-gha-oidc-role"
+      iam_role: "arn:aws:iam::505648753038:role/terraform-gha-oidc-role"
       tf_mode: "apply"
       environment_directory: solomon_portfolio_webpage/
       project_name: kendopx-com

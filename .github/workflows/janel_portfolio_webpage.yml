@@ -40,7 +40,7 @@ jobs:
     secrets: inherit
     with:
       stage: janel-portfolio-webpage-setup
-      # iam_role: "arn:aws:iam::505648753038:role/terraform-gha-oidc-role"
+      iam_role: "arn:aws:iam::505648753038:role/terraform-gha-oidc-role"
       tf_mode: "plan"
       environment_directory: janel_portfolio_webpage/
       project_name: kendopx-com
@@ -65,7 +65,7 @@ jobs:
     secrets: inherit
     with:
       stage: janel-portfolio-webpage-setup
-      # iam_role: "arn:aws:iam::505648753038:role/terraform-gha-oidc-role"
+      iam_role: "arn:aws:iam::505648753038:role/terraform-gha-oidc-role"
       tf_mode: "apply"
       environment_directory: janel_portfolio_webpage/
       project_name: kendopx-com
