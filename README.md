@@ -137,3 +137,13 @@ TF_VAR_hcp_client_secret: ${{secrets.HCP_CLIENT_SECRET}}
 iam_role: "arn:aws:iam::11111111111:role/terraform-gha-oidc-role"
 - Configure OIDC for GitHub Actions on AWS
 - Assuming role with OIDC
+
+https://manage.auth0.com/
+
+### error 
+Terraform Plan janel Portfolio Webpage Setup on Aws / tf-janel-portfolio-webpage-setup-plan
+Could not assume role with OIDC: No OpenIDConnect provider found in your account for https://token.actions.githubusercontent.com
+
+```sh
+You may need to configure the OIDC Issuer with this callback URL: https://kendops.us.auth0.com/login/callback
+```
