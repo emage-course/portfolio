@@ -21,7 +21,7 @@ terraform {
     bucket         = "kendopx-rke2-manager-state"
     key            = "solomon-portfolio-webpage.tfstate"
     region         = "us-east-2"
-    dynamodb_table = "kendopx-rke2-manager-state" # Optional, remove this line if you don't want to use locking
+    # dynamodb_table = "kendopx-rke2-manager-state" # Optional, remove this line if you don't want to use locking
     # encrypt        = true
   }
 }
