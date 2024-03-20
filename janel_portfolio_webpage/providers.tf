@@ -10,7 +10,6 @@ provider "cloudflare" {
 
 provider "aws" {
   region     = "us-east-2"
-  access_key = data.hcp_vault_secrets_app.kendopx-infra.secrets["aws_admin_access_key"]
-  secret_key = data.hcp_vault_secrets_app.kendopx-infra.secrets["aws_admin_secret_key"]
-
+  access_key = data.hcp_vault_secrets_app.kendopx-infra.secrets["aws_access_key_id"]
+  secret_key = data.hcp_vault_secrets_app.kendopx-infra.secrets["aws_secret_access_key"]
 }

@@ -7,7 +7,7 @@
         "Principal": "*",
         "Action": "s3:GetObject",
         "Resource": [
-            "arn:aws:s3:::solomon.techsecom.co/*"
+            "arn:aws:s3:::janel.kendopx.com/*"
         ],
         "Condition": {
           "IpAddress": {

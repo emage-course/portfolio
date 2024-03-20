@@ -36,7 +36,7 @@ module "webpage_portfolio_v1" {
         key_prefix_equals               = "archive/"
       },
       redirect = {
-        host_name          = "www.solomon.kendopx.com"
+        host_name          = "www.janel.kendopx.com"
         http_redirect_code = 301
         protocol           = "https"
         replace_key_with   = "error-404.html"
@@ -47,7 +47,7 @@ module "webpage_portfolio_v1" {
     {
       allowed_headers = ["*"]
       allowed_methods = ["GET"]
-      allowed_origins = ["https://solomon.kendopx.com"]
+      allowed_origins = ["https://janel.kendopx.com"]
       max_age_seconds = 3000
     }
   ]
@@ -98,15 +98,15 @@ resource "cloudflare_zone_settings_override" "my_zone_settings" {
   depends_on = [cloudflare_page_rule.http_to_https]
 }
 
-resource "cloudflare_worker_script" "solomon_html_extension" {
-  name       = "solomon-html-extension"
-  content    = file("${path.module}/solomon_html_extension.js")
+resource "cloudflare_worker_script" "janel_html_extension" {
+  name       = "janel-html-extension"
+  content    = file("${path.module}/janel_html_extension.js")
   account_id = "9839072740566e6053a85a40082affff"
 }
 
-resource "cloudflare_worker_route" "solomon_html_extension_route" {
+resource "cloudflare_worker_route" "janel_html_extension_route" {
   zone_id     = data.cloudflare_zones.domain.zones[0].id
   pattern     = format("%s.%s/*", var.subdomain_name, data.cloudflare_zones.domain.zones[0].name)
-  script_name = cloudflare_worker_script.solomon_html_extension.name
+  script_name = cloudflare_worker_script.janel_html_extension.name
   depends_on  = [cloudflare_record.my_domain]
 }
