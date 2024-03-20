@@ -1,7 +1,7 @@
 variable "domain_name" {
   type        = string
   description = "The domain name for the Cloudflare zone"
-  default     = "techsecom.co"
+  default     = "kendopx.com"
 }
 
 variable "subdomain_name" {
