@@ -19,10 +19,8 @@ on:
 env:
   AWS_ACCOUNT_NUMBER: 992382773715
   AWS_REGION: us-east-2
-  aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-  aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-  # TF_VAR_hcp_client_id: ${{secrets.HCP_CLIENT_ID}}
-  # TF_VAR_hcp_client_secret: ${{secrets.HCP_CLIENT_SECRET}}
+  TF_VAR_hcp_client_id: ${{secrets.HCP_CLIENT_ID}}
+  TF_VAR_hcp_client_secret: ${{secrets.HCP_CLIENT_SECRET}}
 permissions:
   id-token: write
   contents: read
