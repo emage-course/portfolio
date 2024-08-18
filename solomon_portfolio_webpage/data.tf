@@ -1,6 +1,6 @@
 
-data "hcp_vault_secrets_app" "kendopx-infra" {
-  app_name = "kendopx-infra"
+data "hcp_vault_secrets_app" "solyspace-infra" {
+  app_name = "solyspace-infra"
 }
 data "cloudflare_zones" "domain" {
   filter {
