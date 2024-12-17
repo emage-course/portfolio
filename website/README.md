@@ -8,7 +8,7 @@ Give a star ⭐ if you find it useful. [Visit site &rarr;](https://opensource-po
 
 ## Useful resources
 
-Make sure to subscribe to our [youtube channel](https://www.youtube.com/@nisarhassan12) channel where we cover creating template like this from scratch using HTML, CSS and JavaScript also don't forget to star 🌟 the [css-tips-tricks](https://github.com/devsyedmohsin/css-tips-tricks) that has already reached 180+ stars.
+Make sure to subscribe to our [youtube channel](https://www.youtube.com) channel where we cover creating template like this from scratch using HTML, CSS and JavaScript also don't forget to star 🌟 the [css-tips-tricks](https://github.com/emage/css-tips-tricks) that has already reached 180+ stars.
 
 ## Table of Contents
 
@@ -41,14 +41,13 @@ Please follow these three steps to make an awe-inspiring portfolio of your own.
     - [Cloning the Repository.](#cloning-the-repository)
     - [Editing the Template](#editing-the-template)
     - [Deploying the Site](#deploying-the-site)
-    - [Contributions are warmly welcomed ❤️.](#contributions-are-warmly-welcomed-️)
 
 ### Cloning the Repository.
 
 If you have [Git](https://git-scm.com/) installed on your computer, you can clone or download the portfolio template by running the following command in your terminal.
 
 ```bash
-git clone https://github.com/devsyedmohsin/portfolio-template
+git clone https://github.com/emage/portfolio-template
 ```
 
 Alternatively, click on this [link](https://github.com/devsyedmohsin/portfolio-template/archive/refs/heads/main.zip) to download it.
@@ -68,7 +67,7 @@ You will find a file named `index.html` Open it and follow the guidance inscribe
 ```html
 <div class="header-textbox">
   <!-- Replace with your name & job title -->
-  <h1 class="h1">Hi, I'm Syed Mohsin Frontend Web Developer</h1>
+  <h1 class="h1">Hi, I'm Solomon Frontend Web Developer</h1>
 
   <!-- Add a small introductory paragraph about yourself -->
   <p class="header-text">A frontend software engineer and interface designer</p>
@@ -78,9 +77,3 @@ You will find a file named `index.html` Open it and follow the guidance inscribe
 **Note:** While editing the template, ensure you have updated all `href`, img `src`, and `alt` attributes of links and images.
 
 ### Deploying the Site
-
-Watch [this youtube video](https://www.youtube.com/watch?v=oEyXLYW3RjY) to learn how to deploy your version of the portfolio template to the web.
-
-[![Deploy your version of the Portfolio template using Netlify](assets/images/thumbnail.png)](https://www.youtube.com/watch?v=oEyXLYW3RjY "Deploy your version of the Portfolio template using Netlify")
-
-### Contributions are warmly welcomed ❤️.
