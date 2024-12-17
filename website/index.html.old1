@@ -1,7 +1,7 @@
 <!--
   Greetings!
 
-  This delightful template has been meticulously crafted and brought to life by Syed Mohsin. It is generously shared with the world, inviting you to unleash your creativity and tailor it to your heart's content.
+  This delightful template has been meticulously crafted and brought to life by Solomon. It is generously shared with the world, inviting you to unleash your creativity and tailor it to your heart's content.
 -->
 
 <!-- For any inquiries or collaborations reach out to me at devsyedmohsin@gmail.com -->
@@ -23,12 +23,12 @@
 
     <meta
       name="description"
-      content="Welcome to my portfolio website. I am a front-end web developer and I specialize in creating user-friendly, responsive and accessible websites. Explore my projects, open-source work and contact me for any inquiries or collaborations."
+      content="Welcome to my portfolio website. I’m Solomon—a passionate IT professional with a proven track record as a Cloud Engineer, DevOps Engineer, Linux Administrator, Kubernetes Engineer, Site Reliability Engineer (SRE), Security Analyst, Frontend Software Engineer, and Instructor & Mentor. I specialize in building scalable, secure, and efficient systems while empowering others through hands-on training and mentorship. Whether you're looking to enhance business operations, streamline infrastructure, or advance your IT skills, I’m here to guide you toward success. Let’s connect and build something exceptional!"
     />
 
     <!-- Google / Search Engine Tags -->
-<meta itemprop="name" content="Syed Mohsin's Portfolio">
-<meta itemprop="description" content="Welcome to my portfolio website. I am a front-end web developer and I specialize in creating user-friendly, responsive and accessible websites. Explore my projects, open-source work and contact me for any inquiries or collaborations.">
+<meta itemprop="name" content="Solomon's Portfolio">
+<meta itemprop="description" content="Welcome to my portfolio website. I’m Solomon—a passionate IT professional with a proven track record as a Cloud Engineer, DevOps Engineer, Linux Administrator, Kubernetes Engineer, Site Reliability Engineer (SRE), Security Analyst, Frontend Software Engineer, and Instructor & Mentor. I specialize in building scalable, secure, and efficient systems while empowering others through hands-on training and mentorship. Whether you're looking to enhance business operations, streamline infrastructure, or advance your IT skills, I’m here to guide you toward success. Let’s connect and build something exceptional!">
 
 <!-- Reference screenshot of updated site's header in place of content -->
 <meta itemprop="image" content="assets/images/sharing-card.png">
@@ -36,16 +36,16 @@
 <!-- Facebook Meta Tags -->
 <meta property="og:url" content="https://ossportfolio.netlify.app">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Syed Mohsin's Portfolio">
-<meta property="og:description" content="Welcome to my portfolio website. I am a front-end web developer and I specialize in creating user-friendly, responsive and accessible websites. Explore my projects, open-source work and contact me for any inquiries or collaborations.">
+<meta property="og:title" content="Solomon's Portfolio">
+<meta property="og:description" content="Welcome to my portfolio website. I’m Solomon—a passionate IT professional with a proven track record as a Cloud Engineer, DevOps Engineer, Linux Administrator, Kubernetes Engineer, Site Reliability Engineer (SRE), Security Analyst, Frontend Software Engineer, and Instructor & Mentor. I specialize in building scalable, secure, and efficient systems while empowering others through hands-on training and mentorship. Whether you're looking to enhance business operations, streamline infrastructure, or advance your IT skills, I’m here to guide you toward success. Let’s connect and build something exceptional!">
 
 <!-- Reference screenshot of updated site's header in content -->
 <meta property="og:image" content="assets/images/sharing-card.png">
 
 <!-- Twitter Meta Tags -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Syed Mohsin's Portfolio">
-<meta name="twitter:description" content="Welcome to my portfolio website. I am a front-end web developer and I specialize in creating user-friendly, responsive and accessible websites. Explore my projects, open-source work and contact me for any inquiries or collaborations.">
+<meta name="twitter:title" content="Solomon's Portfolio">
+<meta name="twitter:description" content="Welcome to my portfolio website. I’m Solomon—a passionate IT professional with a proven track record as a Cloud Engineer, DevOps Engineer, Linux Administrator, Kubernetes Engineer, Site Reliability Engineer (SRE), Security Analyst, Frontend Software Engineer, and Instructor & Mentor. I specialize in building scalable, secure, and efficient systems while empowering others through hands-on training and mentorship. Whether you're looking to enhance business operations, streamline infrastructure, or advance your IT skills, I’m here to guide you toward success. Let’s connect and build something exceptional!">
 
 <!-- Reference screenshot of updated site's header in content -->
 <meta name="twitter:image" content="assets/images/sharing-card.png">
@@ -72,7 +72,7 @@
     <script src="script.js" defer></script>
 
     <!-- Your name here -->
-    <title>Syed Mohsin's Portfolio</title>
+    <title>Solomon's Portfolio</title>
   </head>
 
   <body>
@@ -106,14 +106,15 @@
         <div class="header-textbox">
           <!-- Replace with your name and job title -->
           <h1 class="h1">
-            <span>Hi, I'm Syed Mohsin</span>
-            <span>Frontend Web Developer</span>
+            <span>Hi, I'm Solomon</span>
+            <span>Cloud Kubernetes Architect</span>
           </h1>
 
           <!-- Add a small introductory paragraph about yourself -->
           <p class="header-text">
-            A frontend software engineer and interface designer who builds UX
-            rich accessible and performant websites.
+            I’m Solomon—a passionate IT professional with a proven track record as a Cloud Engineer, DevOps Engineer, Linux Administrator, Kubernetes Engineer, Site Reliability Engineer (SRE), Security Analyst, Frontend Software Engineer
+            I specialize in building scalable, secure, and efficient systems while empowering others through hands-on training and mentorship. Whether you're looking to enhance business operations, streamline infrastructure, or advance your IT skills, I’m here to guide you toward success
+            Let’s connect and build something exceptional!
           </p>
 
           <div class="header-btns">
@@ -238,13 +239,13 @@
 
                 <div class="work-links">
                   <!-- Add url of project in href attribute -->
-                  <a href="https://github.com/devsyedmohsin" target="_blank" rel="noopener" class="link"
+                  <a href="https://github.com/kendops" target="_blank" rel="noopener" class="link"
                     >Explore this project</a
                   >
 
                   <!-- Add link to project source code in href attribute if applicable otherwise feel free to delete or comment the markup -->
                   <a
-                    href="https://github.com/devsyedmohsin"
+                    href="https://github.com/kendops"
                     target="_blank"
                     rel="noopener"
                     title="Source code"
@@ -288,7 +289,7 @@
 
                      <!-- Add link to project source code in href attribute if applicable otherwise feel free to delete or comment the markup -->
                   <a
-                    href="http://github.com/devsyedmohsin"
+                    href="https://github.com/kendops"
                     target="_blank"
                     rel="noopener"
                     title="Source code"
@@ -357,7 +358,7 @@
         </div>
       </section>
 
-      <!-- I write blog posts on dev.to at https://dev.to/devsyedmohsin. I have linked my articles accordingly, so please update the article title, description, and link accordingly. For example, if you write an article on Medium, link your article to Medium. Also, don't forget to update the reaction count. -->
+      <!-- I write blog posts on dev.to at https://github.com/kendops. I have linked my articles accordingly, so please update the article title, description, and link accordingly. For example, if you write an article on Medium, link your article to Medium. Also, don't forget to update the reaction count. -->
 
       <section class="article">
         <div class="container">
@@ -376,7 +377,7 @@
                   </p>
                 </div>
                 <div class="article-info">
-                  <a href="https://dev.to/devsyedmohsin" class="link" target="_blank" rel="noopener"
+                  <a href="https://github.com/kendops" class="link" target="_blank" rel="noopener"
                     >Continue reading</a
                   >
                   <span class="reaction-count">
@@ -403,7 +404,7 @@
                   </p>
                 </div>
                 <div class="article-info">
-                  <a href="https://dev.to/devsyedmohsin" class="link" target="_blank" rel="noopener"
+                  <a href="https://github.com/kendops" class="link" target="_blank" rel="noopener"
                     >Continue reading</a
                   >
                   <span class="reaction-count">
@@ -431,7 +432,7 @@
                 <div class="article-info">
                   <a href="https://dev.to/devsyedmohsin/free-open-source-portfolio-template-for-developers-4g1d" class="link" target="_blank" rel="noopener"
                     >Continue reading</a
-                  >
+                  > 
                   <span class="reaction-count">
                     <img
                       src="./assets/images/heart-outline.svg"
@@ -454,7 +455,7 @@
                   </div>
                 </div>
                 <div class="article-info">
-                  <a href="https://dev.to/devsyedmohsin" class="link" target="_blank" rel="noopener"
+                  <a href="https://github.com/kendops" class="link" target="_blank" rel="noopener"
                     >Continue reading</a
                   >
                   <span class="reaction-count">
@@ -623,10 +624,10 @@
                 Available for hire
               </strong>
               <p class="contact-text">
-                As a software engineer, I construct web interfaces and design
-                systems with a special love for accessibility and the
-                performance. I tend to code things from scratch and enjoy
-                bringing ideas to life.
+                As a software engineer, I construct web interfaces and design systems with a 
+                strong focus on accessibility and performance
+                I enjoy coding from the ground up and take pride in bringing 
+                ideas to life with precision and creativity.
               </p>
               <p class="contact-text">
                 I'm also an open-source developer, and in my spare time, I do
@@ -635,7 +636,7 @@
               <!-- Replace src with your signatures and name -->
               <img
                 src="assets/images/signatures.png"
-                alt="Syed Mohsin"
+                alt="Solomon"
                 class="signatures"
                 loading="lazy"
               />
@@ -673,7 +674,7 @@
           <nav>
             <ol class="footer-links">
               <li class="footer-link">
-                <a title="GitHub" href="https://github.com/devsyedmohsin" target="_blank" rel="noopener"
+                <a title="GitHub" href="https://github.com/kendops" target="_blank" rel="noopener"
                   ><img
                     loading="lazy"
                     src="assets/images/social-links/github.svg"
@@ -681,7 +682,7 @@
                 /></a>
               </li>
               <li class="footer-link">
-                <a title="Codepen" href="https://github.com/devsyedmohsin" target="_blank" rel="noopener"
+                <a title="Codepen" href="https://github.com/kendops" target="_blank" rel="noopener"
                   ><img
                     loading="lazy"
                     src="assets/images/social-links/codepen.svg"
@@ -689,7 +690,7 @@
                 /></a>
               </li>
               <li class="footer-link">
-                <a title="Linkedin" href="https://www.linkedin.com/in/syed-mohisn-raza-393177262/" target="_blank" rel="noopener"
+                <a title="Linkedin" href="www.linkedin.com/in/solomon-williams-a8307a137/" target="_blank" rel="noopener"
                   ><img
                     loading="lazy"
                     src="assets/images/social-links/linkedin.svg"
@@ -697,7 +698,7 @@
                 /></a>
               </li>
               <li class="footer-link">
-                <a title="Twitter" href="https://github.com/devsyedmohsin" target="_blank" rel="noopener"
+                <a title="Twitter" href="https://github.com/kendops" target="_blank" rel="noopener"
                   ><img
                     loading="lazy"
                     src="assets/images/social-links/twitter.svg"
@@ -707,7 +708,7 @@
             </ol>
           </nav>
           <p class="footer-text">
-            &copy; <span>2024</span> - Template designed & developed by <a target="_blank" rel="noopener" href="https://github.com/devsyedmohsin">Syed Mohsin.</a>
+            &copy; <span>2024</span> - Template designed & developed by <a target="_blank" rel="noopener" href="https://github.com/kendops">Solomon.</a>
           </p>
           <label class="theme-switch" for="theme-switch">
             <span>Dark Theme</span>
