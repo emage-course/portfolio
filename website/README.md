@@ -33,9 +33,15 @@ Make sure to subscribe to our [youtube channel](https://www.youtube.com/@nisarha
 
 Please follow these three steps to make an awe-inspiring portfolio of your own.
 
-- [Cloning the repository](#cloning-the-repository)
-- [Editing the Template](#editing-the-template)
-- [Deploying the Site](#deploying-the-site)
+- [Portfolio Template](#portfolio-template)
+  - [Useful resources](#useful-resources)
+  - [Table of Contents](#table-of-contents)
+  - [Features](#features)
+  - [Customizing the Template](#customizing-the-template)
+    - [Cloning the Repository.](#cloning-the-repository)
+    - [Editing the Template](#editing-the-template)
+    - [Deploying the Site](#deploying-the-site)
+    - [Contributions are warmly welcomed ❤️.](#contributions-are-warmly-welcomed-️)
 
 ### Cloning the Repository.
 
@@ -56,7 +62,7 @@ You will find a file named `index.html` Open it and follow the guidance inscribe
 
 ```html
 <!-- Update with your name -->
-<title>Syed Mohsin's Portfolio</title>
+<title>Solomon's Portfolio</title>
 ```
 
 ```html
